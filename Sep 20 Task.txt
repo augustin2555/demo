@@ -1,0 +1,95 @@
+Write a JavaScript function to generate an array between two integers of 1 step length.
+
+1.Input :
+console.log(range(3, 7));
+Expected Output:
+[3,4, 5, 6, 7]
+
+var temp=[] ;//array declaration using var 
+
+function range(a1,a2){ //function declaration and passing parameters
+
+for(var i=a1;i<=a2;i++){    //using for loop to iterate the array
+    
+  temp.push(i);          //using push method and store the values in temp array
+
+}
+ return temp;          //return key word to return the temp values
+
+}
+
+console.log(range(3,7)); //call the function values passing by arguments
+
+
+2.Input :
+console.log(range(-4, 7));
+Expected Output:
+[-4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
+
+
+
+var result=[];          //using Var empty array declaration//
+function range(arr1,arr2){    //function declaration passing two parameters//
+  
+  for(var i=arr1;i<=arr2;i++)  //using for to iterate the array values in the parameters//
+  {
+    result.push(i); //using push method by push values in array of i//
+}
+return result;      //using return keyword to performing the result//
+}
+console.log(range(-4,7));  //function calling using arguments//
+
+
+3.Write a JavaScript program to find the most frequent item of an array.
+Sample array: 
+var arr1=[3, 'q', 'q', 'q', 2, 3, 'q', 3, 'q', 2, 4, 9, 3];
+Sample Output: q ( 5 times )
+
+
+METHOD:1
+
+var temp=[];                     //temp array delcaration using var keyword//
+function times(arr1){             //function declaration with parameters//
+  
+for(var i=0;i<arr1.length;i++){       //for loop initiate to iterate array of elements//
+  
+  if(arr1[i]=="q"){                   //if condition to check the given condition//
+    temp.push(arr1[i]);                //iterating the array values to push inside the array//
+    
+   }
+ }
+ 
+ return temp;                           //return keyword to giving the result of the array//
+}
+console.log(times([3, 'q', 'q', 'q', 2, 3, 'q', 3, 'q', 2, 4, 9, 3]));   //function calling with arguments by passing values//
+
+o/p q 5 times
+
+
+METHOD:2
+
+// var arr1=[3, 'q', 'q', 'q', 2, 3, 'q', 3, 'q', 2, 4, 9, 3];
+// //Sample Output: q ( 5 times )
+
+
+function times(arr1)
+{
+  for(var i=0;i<arr1.length;i++){
+    
+    if(arr1[i]=="q"){
+    
+  console.log(arr1[i]);
+    }
+
+  }
+  return arr1[i]; 
+}
+  console.log(times([3, 'q', 'q', 'q', 2, 3, 'q', 3, 'q', 2, 4, 9, 3]));
+
+o/p [q,q,q,q,q]
+
+
+
+
+Task Submission Form:
+https://bit.ly/3xB6Q5U
